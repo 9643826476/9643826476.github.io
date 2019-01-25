@@ -1,0 +1,3 @@
+logging objects
+Don't use CONSOLE.LOG(OBJ);,
+use CONSOLE.LOG(JSON.PARSE(JSON.STRINGIFY(OBJ)));.
