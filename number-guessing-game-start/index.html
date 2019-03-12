@@ -93,7 +93,12 @@
 		guessField.focus();
 		
 	}
-	guessSubmit.addEventListener('click', checkGuess);
+	guessSubmit.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { // 13 is enter
+      checkGuess();
+    }
+});
 	//guessField.addEventListener('onsubmit', checkGuess);
 	
 	function setGameOver()
